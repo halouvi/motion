@@ -8,6 +8,7 @@ import {
     TargetAndTransition,
     Omit,
     MakeCustomValueType,
+    TargetResolver,
 } from "../types"
 import { DraggableProps } from "../gestures/drag/types"
 import { LayoutProps } from "./features/layout/types"
@@ -189,7 +190,7 @@ export interface AnimationProps {
      * }
      * ```
      */
-    exit?: TargetAndTransition | VariantLabels
+    exit?: TargetAndTransition | VariantLabels | TargetResolver
 
     /**
      * Variants allow you to define animation states and organise them by name. They allow
